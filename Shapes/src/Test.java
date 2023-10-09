@@ -1,18 +1,20 @@
-import domain.model.Rect;
-import domain.model.Shape;
-import domain.model.Square;
-import domain.model.Circle;
-import domain.model.Triangle;
-import prog.model.Elipse;
+import Shapes.model.Rect;
+import Shapes.model.Shape;
+import Shapes.model.Square;
+import Shapes.model.Circle;
+import Shapes.model.Triangle;
+import Shapes.model.Elipse;
+
 public class Test {
+
 public static void main (String []args){
 
-        var Square= new Square(0, 0);   
-        var Rect = new Rect (0, 0);
-        var Circle = new Circle(0,0);
-        var Triangle=new domain.model.Triangle(0, 0);
-        var Elipse=new domain.model.Elipse(0, 0);
-        var S=new Rect(0, 0);
+        Square Square= new Square(0, 0);  
+        Rect Rect = new Rect (0, 0);
+        Circle Circle = new Circle(0,0);
+        Triangle Triangle=new Shapes.model.Triangle(0, 0);
+        Elipse Elipse=new Shapes.model.Elipse(0, 0);
+        Rect S = new Rect(0, 0);
         S.setHeight(10);
         S.setWidth(20);
 
@@ -34,11 +36,11 @@ public static void main (String []args){
         Rect.setHeight(5);
         Rect.setWidth(8); 
 
+
         System.out.println(" Area Elipse: "+ Elipse.getArea()+" Permetro: "+ Elipse.getPerimeter() );
         System.out.println("Area de el Triangulo es: "+ Triangle.getArea()+" Perimetro de el Triangulo es: "+ Triangle.getPerimeter());
         System.out.println("--Area circulo--" +Circle.getArea()+ "--Perimetro circulo --"+ Circle.getPerimeter());
 
-        System.out.println("Height of Square: " + Square.getHeight()+ "Area of rect : "+ Rect.getArea());   
- }
+        System.out.println("Height of Square: " + Square.getHeight()+ "Area of rect : "+ Rect.getArea());
 }
-
+}
